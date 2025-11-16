@@ -1,0 +1,401 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>OKBソリューションズ — IT業務改善・AI活用サポート</title>
+  <meta name="description" content="OKBソリューションズは中小企業・個人事業主向けに業務改善、システム開発、AI導入支援を提供します。" />
+  <!-- Tailwind Play CDN (for prototyping) -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    /* Minor custom styles to mimic a corporate, calm look */
+    :root{
+      --primary:#0f4c81; /* deep blue */
+      --accent:#0ea5a3; /* teal accent */
+    }
+    .accent { color: var(--accent); }
+    .bg-primary { background: linear-gradient(90deg, rgba(15,76,129,1) 0%, rgba(10,102,120,1) 100%); }
+    /* subtle container width control */
+    .max-w-site { max-width: 1100px; }
+    /* visually hidden for accessible labels */
+    .sr-only{ position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0; }
+  </style>
+</head>
+<body class="antialiased text-gray-800 bg-gray-50">
+
+  <!-- Header -->
+  <header class="bg-white shadow-sm sticky top-0 z-40">
+    <div class="max-w-site mx-auto px-6 py-4 flex items-center justify-between">
+      <div class="flex items-center gap-4">
+        <a href="#" class="inline-flex items-center gap-3">
+          <svg width="40" height="40" viewBox="0 0 24 24" fill="none" class="text-primary" xmlns="http://www.w3.org/2000/svg" aria-hidden>
+            <rect width="24" height="24" rx="6" fill="var(--primary)"></rect>
+            <path d="M7 15V9h10v6H7z" fill="white" opacity="0.95"></path>
+          </svg>
+          <div>
+            <div class="text-lg font-semibold">OKBソリューションズ</div>
+            <div class="text-xs text-gray-500">IT業務改善・AI活用サポート</div>
+          </div>
+        </a>
+      </div>
+
+      <nav class="hidden md:flex items-center gap-6 text-sm">
+        <a href="#services" class="hover:text-primary">サービス</a>
+        <a href="#works" class="hover:text-primary">実例</a>
+        <a href="#about" class="hover:text-primary">会社情報</a>
+        <a href="#contact" class="hover:text-primary">お問い合わせ</a>
+      </nav>
+
+      <div class="flex items-center gap-3">
+        <a href="#contact" class="hidden md:inline-block px-4 py-2 rounded-md bg-primary text-white text-sm hover:opacity-95">無料相談する</a>
+        <button id="mobileMenuBtn" class="md:hidden p-2 rounded-md hover:bg-gray-100" aria-label="メニュー">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M4 6h16M4 12h16M4 18h16" stroke="#374151" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile menu (hidden by default) -->
+  <div id="mobileMenu" class="md:hidden hidden bg-white border-b shadow-sm">
+    <div class="px-4 py-3 flex flex-col gap-2">
+      <a href="#services" class="py-2">サービス</a>
+      <a href="#works" class="py-2">実例</a>
+      <a href="#about" class="py-2">会社情報</a>
+      <a href="#contact" class="py-2">お問い合わせ</a>
+      <a href="#contact" class="py-2 text-white bg-primary rounded-md text-center">無料相談する</a>
+    </div>
+  </div>
+
+  <!-- Hero -->
+  <main>
+    <section class="bg-primary text-white">
+      <div class="max-w-site mx-auto px-6 py-20 lg:py-28 flex flex-col lg:flex-row items-center gap-10">
+        <div class="lg:w-6/12">
+          <h1 class="text-3xl lg:text-4xl font-bold leading-tight">業務改善 × AIで、あなたの仕事をもっとラクに。</h1>
+          <p class="mt-6 text-lg text-white/90">OKBソリューションズは、中小企業・個人事業主の「何から手をつければいいか分からない」を解決するITパートナーです。現役エンジニアが現場に寄り添い、業務整理からシステム導入、AI活用まで一貫して支援します。</p>
+
+          <div class="mt-8 flex items-center gap-3">
+            <a href="#contact" class="inline-block bg-white text-primary px-5 py-3 rounded-md font-medium shadow-sm">無料相談する</a>
+            <a href="#services" class="inline-block border border-white/30 px-5 py-3 rounded-md text-white">サービスを見る</a>
+          </div>
+
+          <ul class="mt-8 grid grid-cols-1 sm:grid-cols-2 gap-3 text-sm text-white/90">
+            <li>・業務改善コンサルティング</li>
+            <li>・システム開発（Webアプリ）</li>
+            <li>・Excel／スプレッドシート自動化</li>
+            <li>・FAQボット・チャット導入</li>
+          </ul>
+        </div>
+
+        <div class="lg:w-6/12">
+          <!-- Card with quick contact / elevator pitch -->
+          <div class="bg-white rounded-xl p-6 text-gray-800 shadow-lg">
+            <div class="flex items-start gap-4">
+              <div class="flex-shrink-0">
+                <svg width="48" height="48" viewBox="0 0 24 24" fill="none"><rect width="24" height="24" rx="6" fill="var(--primary)"></rect><path d="M7 15V9h10v6H7z" fill="white" opacity="0.95"></path></svg>
+              </div>
+              <div>
+                <div class="text-sm text-gray-500">スピード導入/テンプレ有</div>
+                <div class="mt-2 text-lg font-semibold">最短で業務を自動化・効率化します</div>
+                <p class="mt-3 text-sm text-gray-600">まずは現状ヒアリング（30分）で、改善アイデアと概算見積を提示。小さく始めて改善を積み重ねる伴走型の支援です。</p>
+                <div class="mt-4">
+                  <a href="#contact" class="inline-block px-4 py-2 bg-primary text-white rounded-md text-sm">30分ヒアリングを申し込む</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="mt-6 border-t pt-4 text-xs text-gray-500">
+              実例：チャットボット／業務ツールを公開中 — <a href="https://kotaokubo.github.io/one_click_chat_bot_ai/" target="_blank" class="text-primary hover:underline">チャットボット</a> / <a href="https://kotaokubo.github.io/boarding_fee_-calculater/" target="_blank" class="text-primary hover:underline">計算ツール</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services -->
+    <section id="services" class="py-16">
+      <div class="max-w-site mx-auto px-6">
+        <h2 class="text-2xl font-bold">提供サービス</h2>
+        <p class="mt-3 text-gray-600 max-w-2xl">業務改善の観点から、必要な範囲だけを最短で導入。初めての方でも安心して始められるメニューを用意しています。</p>
+
+        <div class="mt-8 grid grid-cols-1 md:grid-cols-3 gap-6">
+          <!-- Card 1 -->
+          <article class="bg-white p-6 rounded-xl shadow-sm">
+            <h3 class="font-semibold text-lg">業務改善コンサルティング</h3>
+            <p class="mt-3 text-sm text-gray-600">現状の業務フローを可視化し、ムダを削減する改善提案を行います。ヒアリング→現場観察→改善設計まで伴走します。</p>
+            <ul class="mt-4 text-sm text-gray-500 space-y-1">
+              <li>・業務フロー診断</li>
+              <li>・改善ロードマップ作成</li>
+              <li>・ツール選定支援</li>
+            </ul>
+          </article>
+
+          <!-- Card 2 -->
+          <article class="bg-white p-6 rounded-xl shadow-sm">
+            <h3 class="font-semibold text-lg">システム開発（Webアプリ）</h3>
+            <p class="mt-3 text-sm text-gray-600">予約管理・顧客管理・在庫管理など、現場に合わせた最小限の業務システムを提供します。既存スプレッドシートの拡張も得意です。</p>
+            <ul class="mt-4 text-sm text-gray-500 space-y-1">
+              <li>・カスタム・ミニシステム</li>
+              <li>・スプレッドシート基盤拡張</li>
+              <li>・API連携（LINE, Slack等）</li>
+            </ul>
+          </article>
+
+          <!-- Card 3 -->
+          <article class="bg-white p-6 rounded-xl shadow-sm">
+            <h3 class="font-semibold text-lg">AI活用 / 自動化支援</h3>
+            <p class="mt-3 text-sm text-gray-600">FAQボットや議事録の自動化、AIによる文書生成など、実務で使えるAI導入を支援します。テンプレートで素早く導入可能です。</p>
+            <ul class="mt-4 text-sm text-gray-500 space-y-1">
+              <li>・FAQボット（Web / LINE）</li>
+              <li>・議事録・要約の自動化</li>
+              <li>・ChatGPT連携アシスタント</li>
+            </ul>
+          </article>
+
+          <!-- Card 4 -->
+          <article class="bg-white p-6 rounded-xl shadow-sm">
+            <h3 class="font-semibold text-lg">Webサイト制作・改修</h3>
+            <p class="mt-3 text-sm text-gray-600">小規模事業者向けに、速く・安く・見栄えの良いサイトを制作。SEOや表示速度にも配慮します。</p>
+            <ul class="mt-4 text-sm text-gray-500 space-y-1">
+              <li>・コーポレートサイト / LP</li>
+              <li>・Notion連携で運用しやすく</li>
+              <li>・AIチャット埋め込み対応</li>
+            </ul>
+          </article>
+
+          <!-- Card 5 -->
+          <article class="bg-white p-6 rounded-xl shadow-sm">
+            <h3 class="font-semibold text-lg">Excel / スプレッドシート自動化</h3>
+            <p class="mt-3 text-sm text-gray-600">日次・月次の集計やレポート作成、PDF出力などを自動化。GAS・VBA・小さなRPAで現場がすぐ使える仕組みを作ります。</p>
+            <ul class="mt-4 text-sm text-gray-500 space-y-1">
+              <li>・ワンクリック集計</li>
+              <li>・請求書PDF自動生成</li>
+              <li>・定期レポート自動送信</li>
+            </ul>
+          </article>
+
+          <!-- Card 6 -->
+          <article class="bg-white p-6 rounded-xl shadow-sm">
+            <h3 class="font-semibold text-lg">IT導入サポート（SaaS）</h3>
+            <p class="mt-3 text-sm text-gray-600">Notion・Google Workspace・LINEなどの導入設計・設定と運用教育まで支援。小さな組織でも運用できる設計を重視します。</p>
+            <ul class="mt-4 text-sm text-gray-500 space-y-1">
+              <li>・アカウント設計</li>
+              <li>・権限整理・運用ルール設計</li>
+              <li>・社員向け研修</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Works / Examples -->
+    <section id="works" class="py-16 bg-white">
+      <div class="max-w-site mx-auto px-6">
+        <h2 class="text-2xl font-bold">実例（Works）</h2>
+        <p class="mt-3 text-gray-600">現場で使えるツールを短期間で構築。下記は公開中の実例です。</p>
+
+        <div class="mt-8 grid grid-cols-1 md:grid-cols-2 gap-6">
+          <article class="p-6 rounded-xl border">
+            <div class="flex items-start gap-4">
+              <div class="flex-shrink-0">
+                <svg width="40" height="40" viewBox="0 0 24 24" fill="none"><rect width="24" height="24" rx="6" fill="#0ea5a3"></rect><path d="M7 15V9h10v6H7z" fill="white"></path></svg>
+              </div>
+              <div>
+                <h3 class="text-lg font-semibold">ワンクリックFAQチャットボット</h3>
+                <p class="mt-2 text-sm text-gray-600">サイトに貼るだけで使えるチャットボット。FAQを学習し問い合わせ対応を自動化します。</p>
+                <p class="mt-3 text-sm"><a href="https://kotaokubo.github.io/one_click_chat_bot_ai/" target="_blank" class="text-primary hover:underline">実例を見る →</a></p>
+              </div>
+            </div>
+          </article>
+
+          <article class="p-6 rounded-xl border">
+            <div class="flex items-start gap-4">
+              <div class="flex-shrink-0">
+                <svg width="40" height="40" viewBox="0 0 24 24" fill="none"><rect width="24" height="24" rx="6" fill="#0f4c81"></rect><path d="M7 15V9h10v6H7z" fill="white"></path></svg>
+              </div>
+              <div>
+                <h3 class="text-lg font-semibold">計算ツール（PWA化可能）</h3>
+                <p class="mt-2 text-sm text-gray-600">Excelでやっていた計算をWebアプリ化。スマホから使えるPWAにして業務効率を向上。</p>
+                <p class="mt-3 text-sm"><a href="https://kotaokubo.github.io/boarding_fee_-calculater/" target="_blank" class="text-primary hover:underline">実例を見る →</a></p>
+              </div>
+            </div>
+          </article>
+
+          <article class="p-6 rounded-xl border col-span-1 md:col-span-2">
+            <h3 class="text-lg font-semibold">スプレッドシート自動化の導入例</h3>
+            <p class="mt-2 text-sm text-gray-600">請求書PDFの自動生成・月次レポートの自動送信・在庫アラートなど、業務に合わせた自動化テンプレートを提供。まずは「Excelを送るだけ」から導入できます。</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Strengths / Why choose -->
+    <section class="py-16">
+      <div class="max-w-site mx-auto px-6">
+        <h2 class="text-2xl font-bold">選ばれる理由</h2>
+
+        <div class="mt-8 grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div class="bg-white p-6 rounded-xl shadow-sm">
+            <h4 class="font-semibold">現役エンジニアの技術力</h4>
+            <p class="mt-2 text-sm text-gray-600">大手SaaSでの開発経験を活かし、堅牢で使えるシステムを提供します。</p>
+          </div>
+
+          <div class="bg-white p-6 rounded-xl shadow-sm">
+            <h4 class="font-semibold">説明しやすい・使いやすい設計</h4>
+            <p class="mt-2 text-sm text-gray-600">技術に不慣れな方でも安心して運用できるUI・運用設計を重視します。</p>
+          </div>
+
+          <div class="bg-white p-6 rounded-xl shadow-sm">
+            <h4 class="font-semibold">伴走型の支援</h4>
+            <p class="mt-2 text-sm text-gray-600">導入後も運用支援・改善提案を継続し、現場で定着するまでサポートします。</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About / Company -->
+    <section id="about" class="py-16 bg-gray-50">
+      <div class="max-w-site mx-auto px-6">
+        <h2 class="text-2xl font-bold">会社情報</h2>
+        <div class="mt-6 grid grid-cols-1 md:grid-cols-3 gap-6 items-start">
+          <div class="md:col-span-2 bg-white p-6 rounded-xl shadow-sm">
+            <h3 class="text-lg font-semibold">OKBソリューションズ（代表：大久保 滉太）</h3>
+            <p class="mt-3 text-sm text-gray-600">中小企業や個人事業主の業務改善とAI導入を支援する個人事業主／フリーランスです。現役エンジニアとしての経験をもとに、無理のない範囲で効率化を進めます。</p>
+
+            <dl class="grid grid-cols-2 gap-4 mt-6 text-sm text-gray-700">
+              <div><dt class="text-gray-500">事業内容</dt><dd>業務改善コンサル／システム開発／AI導入支援</dd></div>
+              <div><dt class="text-gray-500">代表</dt><dd>大久保 滉太</dd></div>
+              <div><dt class="text-gray-500">想定顧客</dt><dd>中小企業・個人事業主（美容・飲食・士業 等）</dd></div>
+              <div><dt class="text-gray-500">料金目安</dt><dd>月額5万円〜 / 開発10万円〜</dd></div>
+            </dl>
+          </div>
+
+          <div class="bg-white p-6 rounded-xl shadow-sm">
+            <h4 class="font-semibold">代表メッセージ</h4>
+            <p class="mt-3 text-sm text-gray-600">「小さな改善が毎日の仕事を変える」——その一歩を一緒に作ります。まずはお気軽にご相談ください。</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="py-16">
+      <div class="max-w-site mx-auto px-6">
+        <h2 class="text-2xl font-bold">お問い合わせ / 無料相談</h2>
+        <p class="mt-3 text-gray-600">まずは30分のヒアリングで、改善案と概算見積を提示します。気軽にご相談ください。</p>
+
+        <div class="mt-8 grid grid-cols-1 md:grid-cols-2 gap-6">
+          <form id="contactForm" class="space-y-4 bg-white p-6 rounded-xl shadow-sm" onsubmit="return handleSubmit(event)">
+            <label class="block">
+              <span class="text-sm text-gray-700">お名前</span>
+              <input type="text" name="name" class="mt-1 block w-full border rounded-md px-3 py-2" required />
+            </label>
+
+            <label class="block">
+              <span class="text-sm text-gray-700">メールアドレス</span>
+              <input type="email" name="email" class="mt-1 block w-full border rounded-md px-3 py-2" required />
+            </label>
+
+            <label class="block">
+              <span class="text-sm text-gray-700">ご相談内容（簡単に）</span>
+              <textarea name="message" rows="4" class="mt-1 block w-full border rounded-md px-3 py-2" required></textarea>
+            </label>
+
+            <div class="flex items-center gap-3">
+              <button type="submit" class="bg-primary text-white px-4 py-2 rounded-md">送信する（ダミー）</button>
+              <button type="button" onclick="fillDemo()" class="text-sm px-3 py-2 border rounded-md">サンプル入力</button>
+              <span id="formMsg" class="text-sm text-gray-600"></span>
+            </div>
+            <p class="text-xs text-gray-400 mt-2">※ このフォームはデモです。実運用に合わせてメール送信やZapier連携など設定します。</p>
+          </form>
+
+          <div class="bg-white p-6 rounded-xl shadow-sm">
+            <h4 class="font-semibold">ご相談の流れ</h4>
+            <ol class="mt-3 list-decimal list-inside text-sm text-gray-600 space-y-2">
+              <li>無料ヒアリング（30分）</li>
+              <li>課題の可視化・概算見積提示</li>
+              <li>開発・導入（スモールスタート推奨）</li>
+              <li>運用サポート・改善提案</li>
+            </ol>
+
+            <div class="mt-6">
+              <p class="text-sm text-gray-700">外部での打ち合わせや訪問も可能です（要相談）。</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-gray-200">
+      <div class="max-w-site mx-auto px-6 py-10">
+        <div class="flex flex-col md:flex-row md:justify-between gap-6">
+          <div>
+            <div class="text-lg font-semibold">OKBソリューションズ</div>
+            <div class="mt-2 text-sm">業務改善・AI活用サポート</div>
+            <div class="mt-4 text-xs text-gray-400">Copyright © OKBソリューションズ</div>
+          </div>
+
+          <div class="flex gap-8">
+            <div>
+              <div class="font-medium text-sm">Service</div>
+              <ul class="mt-2 text-xs text-gray-400 space-y-1">
+                <li><a href="#services" class="hover:underline">サービス一覧</a></li>
+                <li><a href="#works" class="hover:underline">実例</a></li>
+                <li><a href="#about" class="hover:underline">会社情報</a></li>
+              </ul>
+            </div>
+
+            <div>
+              <div class="font-medium text-sm">Contact</div>
+              <ul class="mt-2 text-xs text-gray-400 space-y-1">
+                <li>メール: <span class="text-gray-200">info@okb-solutions.example</span></li>
+                <li>想定料金: 月額5万円～</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </main>
+
+  <script>
+    // Mobile menu toggle
+    document.getElementById('mobileMenuBtn').addEventListener('click', () => {
+      const mm = document.getElementById('mobileMenu');
+      mm.classList.toggle('hidden');
+    });
+
+    // Dummy form submission handler (replace with real backend or Zapier integration)
+    function handleSubmit(e) {
+      e.preventDefault();
+      const form = e.target;
+      const name = form.name.value.trim();
+      const email = form.email.value.trim();
+      const message = form.message.value.trim();
+      const msgEl = document.getElementById('formMsg');
+
+      if (!name || !email || !message) {
+        msgEl.textContent = '全ての項目を入力してください。';
+        msgEl.classList.add('text-red-500');
+        return false;
+      }
+
+      // show demo success and reset
+      msgEl.classList.remove('text-red-500');
+      msgEl.textContent = 'お問い合わせを受け付けました（デモ） — 実運用にはメール送信設定が必要です。';
+      form.reset();
+      return false;
+    }
+
+    // Fill sample for demo
+    function fillDemo() {
+      const form = document.getElementById('contactForm');
+      form.name.value = '山田 太郎';
+      form.email.value = 'taro@example.com';
+      form.message.value = 'Excelの集計を自動化したい。まずは相談したいです。';
+      document.getElementById('formMsg').textContent = '';
+    }
+  </script>
+</body>
+</html>
