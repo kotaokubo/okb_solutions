@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>OKBソリューションズ — 小さな会社の業務改善・AI自動化パートナー</title>
+  <meta name="description" content="現役SaaSエンジニアが中小企業・個人事業主の面倒な業務をAIと自動化で最速改善します。30分無料相談受付中。">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    /* カスタムスタイル（必要なら調整してください） */
+    .hero-bg{background:linear-gradient(90deg,#0f172a 0%, #0ea5a9 100%);}
+  </style>
+</head>
+<body class="antialiased text-slate-800">
+  <!-- ヘッダー -->
+  <header class="sticky top-0 z-40 bg-white/80 backdrop-blur-sm border-b">
+    <div class="max-w-5xl mx-auto px-6 py-4 flex items-center justify-between">
+      <a href="#" class="flex items-center gap-3">
+        <div class="w-10 h-10 rounded-lg bg-teal-500 flex items-center justify-center text-white font-bold">OKB</div>
+        <div>
+          <div class="font-semibold">OKBソリューションズ</div>
+          <div class="text-xs text-slate-500">業務改善 × AI × 自動化</div>
+        </div>
+      </a>
+      <nav class="hidden md:flex items-center gap-4 text-sm">
+        <a href="#services" class="hover:underline">サービス</a>
+        <a href="#works" class="hover:underline">導入事例</a>
+        <a href="#faq" class="hover:underline">FAQ</a>
+        <a href="#contact" class="px-4 py-2 rounded-md bg-teal-500 text-white">無料相談（30分）</a>
+      </nav>
+      <button id="mobileMenuBtn" class="md:hidden">☰</button>
+    </div>
+    <div id="mobileMenu" class="hidden px-6 pb-4 md:hidden">
+      <a href="#services" class="block py-2">サービス</a>
+      <a href="#works" class="block py-2">導入事例</a>
+      <a href="#faq" class="block py-2">FAQ</a>
+      <a href="#contact" class="block py-2">無料相談（30分）</a>
+    </div>
+  </header>
+
+  <!-- ファーストビュー -->
+  <section class="hero-bg text-white">
+    <div class="max-w-5xl mx-auto px-6 py-20 md:py-28">
+      <div class="grid md:grid-cols-2 gap-8 items-center">
+        <div>
+          <h1 class="text-3xl md:text-4xl font-extrabold leading-tight">小さな会社・個人事業主の “面倒な業務” を、最速で自動化する。</h1>
+          <p class="mt-4 text-slate-100/90">現役SaaSエンジニアが、あなたの現場に合わせて <strong>AI × 自動化 × 業務改善</strong> を一気通貫でサポートします。</p>
+
+          <div class="mt-6 flex gap-3">
+            <a href="#contact" class="inline-block px-5 py-3 bg-white text-teal-700 font-semibold rounded shadow">まずは30分の無料相談</a>
+            <a href="#services" class="inline-block px-5 py-3 border border-white/30 rounded">サービスを見る</a>
+          </div>
+
+          <ul class="mt-6 text-sm text-slate-100/80 space-y-2">
+            <li>・社内に詳しい人がいなくてもOK</li>
+            <li>・ツール導入〜AI活用まで完全おまかせ</li>
+            <li>・小さな業務でもスピード対応（最短数日〜）</li>
+          </ul>
+        </div>
+
+        <div class="bg-white/10 rounded-lg p-6">
+          <h3 class="text-lg font-semibold">無料相談でできること</h3>
+          <ul class="mt-3 text-slate-100/90 space-y-2 text-sm">
+            <li>・現状ヒアリング</li>
+            <li>・その場で改善案（概算）</li>
+            <li>・スケジュールと予算感の提示</li>
+            <li>・PoC（簡易プロトタイプ）の提案</li>
+          </ul>
+          <div class="mt-4">
+            <a href="#contact" class="inline-block px-4 py-2 bg-white text-teal-700 rounded font-medium">無料相談を予約する</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <main class="max-w-5xl mx-auto px-6 py-12">
+    <!-- 強み -->
+    <section class="grid md:grid-cols-3 gap-6">
+      <div class="p-6 border rounded-md">
+        <h4 class="font-semibold">正確・早い・実装まで面倒見ます</h4>
+        <p class="mt-2 text-sm text-slate-600">現役SaaSエンジニアとしての実装力で、現場で使える仕組みを作ります。</p>
+      </div>
+      <div class="p-6 border rounded-md">
+        <h4 class="font-semibold">小さな会社に最適化</h4>
+        <p class="mt-2 text-sm text-slate-600">5万円〜、最短数日での改善も可能。高額コンサルは不要です。</p>
+      </div>
+      <div class="p-6 border rounded-md">
+        <h4 class="font-semibold">ツールに縛られない提案</h4>
+        <p class="mt-2 text-sm text-slate-600">SaaS・AI・自作ツールから最適な方法を選びます。</p>
+      </div>
+    </section>
+
+    <!-- サービス -->
+    <section id="services" class="mt-12">
+      <h2 class="text-2xl font-bold">主なサービス</h2>
+      <div class="mt-6 grid md:grid-cols-2 gap-6">
+        <article class="p-6 border rounded-md">
+          <h3 class="font-semibold">業務改善コンサルティング</h3>
+          <p class="mt-2 text-sm text-slate-600">業務フローの可視化・無駄取り・改善案の提示まで。まずは現場の声を聞き、必要最小限の改善から実装します。</p>
+        </article>
+        <article class="p-6 border rounded-md">
+          <h3 class="font-semibold">AI活用・自動化</h3>
+          <p class="mt-2 text-sm text-slate-600">ChatGPTなどの大規模言語モデルやAPIを使った業務効率化（FAQ、チャットボット、文章自動化など）。</p>
+        </article>
+        <article class="p-6 border rounded-md">
+          <h3 class="font-semibold">スプレッドシート自動化</h3>
+          <p class="mt-2 text-sm text-slate-600">集計・転記・請求書作成など、手作業をスクリプトやマクロで自動化します。最短1日で改善可能なケースもあります。</p>
+        </article>
+        <article class="p-6 border rounded-md">
+          <h3 class="font-semibold">ミニアプリ / Webツール開発</h3>
+          <p class="mt-2 text-sm text-slate-600">業務にフィットした小規模なWebツール（料金計算、予約フォーム、管理ツールなど）を開発します。</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- 導入事例 -->
+    <section id="works" class="mt-12">
+      <h2 class="text-2xl font-bold">導入事例（抜粋）</h2>
+      <div class="mt-6 space-y-4">
+        <div class="p-4 border rounded-md">
+          <h4 class="font-semibold">釣船業：料金計算ツール</h4>
+          <p class="text-sm text-slate-600 mt-2">課題：手作業での計算ミス・時間がかかる<br>対応：簡易Webツールを作成し、入力→出力の自動化を実装<br>効果：**業務時間 80%削減**</p>
+        </div>
+        <div class="p-4 border rounded-md">
+          <h4 class="font-semibold">不動産：管理自動化</h4>
+          <p class="text-sm text-slate-600 mt-2">課題：データが分散しており手入力が多い<br>対応：スプレッドシートとAPI連携でデータ同期を実装<br>効果：**手入力ゼロに**</p>
+        </div>
+      </div>
+      <p class="mt-4 text-sm text-slate-500">※ 実績は匿名化して掲載しています。詳しい事例はお問い合わせください。</p>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" class="mt-12">
+      <h2 class="text-2xl font-bold">よくある質問（FAQ）</h2>
+      <div class="mt-4 grid md:grid-cols-2 gap-4">
+        <div class="p-4 border rounded-md">
+          <h4 class="font-medium">ITに詳しくないのですが大丈夫ですか？</h4>
+          <p class="text-sm text-slate-600 mt-2">はい。ほとんどのお客様が同じ状態からスタートしています。導入・運用まで丁寧にサポートします。</p>
+        </div>
+        <div class="p-4 border rounded-md">
+          <h4 class="font-medium">小さな相談でも依頼できますか？</h4>
+          <p class="text-sm text-slate-600 mt-2">はい。1つの帳票や一部の集計など、小さな改善から承ります。</p>
+        </div>
+        <div class="p-4 border rounded-md">
+          <h4 class="font-medium">見積もりは無料ですか？</h4>
+          <p class="text-sm text-slate-600 mt-2">はい。初回のヒアリングと概算見積は無料です。</p>
+        </div>
+        <div class="p-4 border rounded-md">
+          <h4 class="font-medium">どれくらいで成果が出ますか？</h4>
+          <p class="text-sm text-slate-600 mt-2">案件によりますが、スプレッドシート自動化や簡易ツールは数日〜2週間、より複雑なシステムは数週間〜数ヶ月です。</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA / Contact -->
+    <section id="contact" class="mt-12 p-6 border rounded-md bg-slate-50">
+      <h2 class="text-2xl font-bold">まずは気軽に相談してください</h2>
+      <p class="mt-2 text-sm text-slate-600">30分の無料相談で、現状の課題と改善の方向性を一緒に確認しましょう。</p>
+
+      <div class="mt-4 flex flex-col md:flex-row gap-4">
+        <a href="mailto:hello@example.com?subject=無料相談の申込&body=以下に簡単な相談内容をお書きください。%0D%0A%0D%0A- 会社名/屋号:%0D%0A- 担当者名:%0D%0A- 相談の要点:%0D%0A" class="inline-block px-5 py-3 bg-teal-600 text-white rounded-md">メールで相談する</a>
+        <a href="https://kotaokubo.github.io/okb_solutions/" class="inline-block px-5 py-3 border rounded-md">サイト内の相談フォームへ</a>
+      </div>
+
+      <p class="mt-4 text-xs text-slate-500">※ 迷惑メール対策等でメールが届かない場合は別のアドレスからお試しください。</p>
+    </section>
+
+    <footer class="mt-12 py-8 text-sm text-slate-500">
+      <div class="flex items-center justify-between">
+        <div>© OKBソリューションズ</div>
+        <div>大久保滉太</div>
+      </div>
+    </footer>
+  </main>
+
+  <script>
+    // モバイルメニューのトグル
+    document.getElementById('mobileMenuBtn')?.addEventListener('click', function(){
+      const menu = document.getElementById('mobileMenu');
+      if(!menu) return;
+      menu.classList.toggle('hidden');
+    });
+  </script>
+</body>
+</html>
