@@ -206,27 +206,20 @@
         <p class="mt-3 text-gray-600">現場で使えるツールを短期間で構築。下記はこれまでの支援実績と公開中の実例です。</p>
 
         <div class="mt-8 grid grid-cols-1 md:grid-cols-2 gap-6">
-          <article class="p-6 rounded-xl border">
-            <div class="flex items-start gap-4">
-              <div class="flex-shrink-0">
-                <svg width="40" height="40" viewBox="0 0 24 24" fill="none"><rect width="24" height="24" rx="6" fill="#0f4c81"></rect><path d="M7 15V9h10v6H7z" fill="white"></path></svg>
-              </div>
-              <div>
-                <h3 class="text-lg font-semibold">金沢八景 一之瀬丸 様｜釣り船の料金計算ツール</h3>
-                <p class="mt-2 text-sm text-gray-600">乗合船・仕立て船の乗船料とレンタル品を選ぶだけで、総額をその場で計算できるWebツールを制作しました。一之瀬丸様の公式ページとして公開し、料金改定やプラン追加にも継続して対応しています。</p>
-                <p class="mt-3 text-sm"><a href="https://ichinosemaru.jp" target="_blank" rel="noopener" class="text-primary hover:underline">ツールを見る →</a></p>
-              </div>
-            </div>
-          </article>
-
-          <article class="p-6 rounded-xl border">
+          <article class="p-6 rounded-xl border md:col-span-2">
             <div class="flex items-start gap-4">
               <div class="flex-shrink-0">
                 <svg width="40" height="40" viewBox="0 0 24 24" fill="none"><rect width="24" height="24" rx="6" fill="#0ea5a3"></rect><path d="M7 15V9h10v6H7z" fill="white"></path></svg>
               </div>
               <div>
-                <h3 class="text-lg font-semibold">村田宝飾 様｜業務改善・自動化支援とサイト刷新</h3>
-                <p class="mt-2 text-sm text-gray-600">宝飾品の卸売を営む企業様の業務改善を継続支援しています。販売管理システムへの入力を補助する自動化ツールを社員の方へ配布し、通信費などのコスト見直しも毎月の報告とともに進めています。コーポレートサイトも、社員の方がAIに日本語で頼むだけで更新できる構成に刷新しました。</p>
+                <h3 class="text-lg font-semibold">村田宝飾 様｜業務改善・システム移行・サイト刷新（2026年7月〜継続中）</h3>
+                <p class="mt-2 text-sm text-gray-600">宝飾品の卸売を営む企業様を、業務の聞き取りから毎月の成果報告まで一貫して支援しています。</p>
+                <ul class="mt-3 text-sm text-gray-600 space-y-1">
+                  <li>・<span class="font-medium">現場ツールの開発と配布</span>：メルマガ作成、ネットショップへの商品登録、送付明細書、在庫表（NC表）の作成など、販売管理システムの入力を補助するツールを10本ほど作り、社員の方へ配布。手順書も社員向けに整備しました。</li>
+                  <li>・<span class="font-medium">販売管理システムとネットショップの移行</span>：長年運用されてきたシステムを最新のPHPと新サーバーへ移行。全画面を自動で巡回する検査と、新旧の帳票（PDF・CSV・Excel）の突き合わせで、動作が変わらないことを確かめてから切り替えました。</li>
+                  <li>・<span class="font-medium">コスト見直しと業務の可視化</span>：通信費の棚卸し、営業用タブレットの調達比較、業務フローの整理を行い、改善の打ち手を社長へ月次で報告しています。</li>
+                  <li>・<span class="font-medium">コーポレートサイトの刷新</span>：Figmaのデザインをもとに多言語対応のサイトを構築。事務の方がAIに日本語で頼むだけで更新できる運用にしました。</li>
+                </ul>
               </div>
             </div>
           </article>
@@ -238,7 +231,33 @@
               </div>
               <div>
                 <h3 class="text-lg font-semibold">TERIYAKI 様｜飲食店予約サービスの品質改善</h3>
-                <p class="mt-2 text-sm text-gray-600">飲食店予約サービス（利用者向けサイト・店舗向け管理画面・運営管理画面・API）の開発に参画しています。基盤ライブラリの更新方針を提案し、更新を安全に進めるための自動テストとCIを整備しています。</p>
+                <p class="mt-2 text-sm text-gray-600">利用者向けサイト・店舗向け管理画面・運営管理画面・APIからなる予約サービスに参画。基盤ライブラリの更新方針を提案し、更新を安全に進めるための土台として、全リポジトリにCIと自動テスト（E2Eテスト・APIテスト）を整備しました。あわせて、二重送信や通信失敗からの復旧など、予約・決済まわりの不具合を修正しています。</p>
+              </div>
+            </div>
+          </article>
+
+          <article class="p-6 rounded-xl border">
+            <div class="flex items-start gap-4">
+              <div class="flex-shrink-0">
+                <svg width="40" height="40" viewBox="0 0 24 24" fill="none"><rect width="24" height="24" rx="6" fill="#0ea5a3"></rect><path d="M7 15V9h10v6H7z" fill="white"></path></svg>
+              </div>
+              <div>
+                <h3 class="text-lg font-semibold">金沢八景 一之瀬丸 様｜釣り船の料金計算ツール</h3>
+                <p class="mt-2 text-sm text-gray-600">乗合船・仕立て船の乗船料とレンタル品を選ぶだけで、総額をその場で計算できるWebツールを制作しました。一之瀬丸様の公式ページとして公開し、季節ごとのプランの入れ替えや料金改定に継続して対応しています。</p>
+                <p class="mt-3 text-sm"><a href="https://ichinosemaru.jp" target="_blank" rel="noopener" class="text-primary hover:underline">ツールを見る →</a></p>
+              </div>
+            </div>
+          </article>
+
+          <article class="p-6 rounded-xl border">
+            <div class="flex items-start gap-4">
+              <div class="flex-shrink-0">
+                <svg width="40" height="40" viewBox="0 0 24 24" fill="none"><rect width="24" height="24" rx="6" fill="#0f4c81"></rect><path d="M7 15V9h10v6H7z" fill="white"></path></svg>
+              </div>
+              <div>
+                <h3 class="text-lg font-semibold">神奈川県釣船業協同組合 様｜公式サイトのリニューアル</h3>
+                <p class="mt-2 text-sm text-gray-600">スマホに対応していなかった旧サイトを、スマホで読みやすく、サーバー費用のかからない構成に作り替えました。加盟船宿の一覧や、毎年の放流活動・清掃活動の報告ページの追加も続けています。</p>
+                <p class="mt-3 text-sm"><a href="https://kanatsuri.com" target="_blank" rel="noopener" class="text-primary hover:underline">サイトを見る →</a></p>
               </div>
             </div>
           </article>
@@ -250,7 +269,7 @@
               </div>
               <div>
                 <h3 class="text-lg font-semibold">おけいこ帳（自社サービス・ベータ準備中）</h3>
-                <p class="mt-2 text-sm text-gray-600">ピアノ・書道・英語などの個人教室の先生向けに、生徒管理・月謝集金・出欠記録をスマホ1つで完結できるサービスを自社で開発しています。</p>
+                <p class="mt-2 text-sm text-gray-600">ピアノ・書道・英語などの個人教室の先生向けに、生徒管理・月謝集金・出欠記録をスマホ1つで完結できるサービスを自社で開発しています。オンライン決済とLINE連携に対応しています。</p>
                 <p class="mt-3 text-sm"><a href="https://okeiko-cho.jp" target="_blank" rel="noopener" class="text-primary hover:underline">サービスを見る →</a></p>
               </div>
             </div>
